@@ -285,7 +285,7 @@
     <section class="portfolio" id="portfolio">
 
         <div class="heading">
-            <h2>my <span>portfolio</span></h2>
+            <h2>My <span>portfolio</span></h2>
         </div>
 
         <div class="gallery">
@@ -294,6 +294,7 @@
                     <img src="assets/images/Portfolio/tvnovelas.png" alt="Portfolio-Image" />
                     <div class="content">
                         <h4>Fetch Novelas</h4>
+                        <p>Developed with JS</p>
                         <a data-effect="mfp-newspaper" id="novelas" href="assets/images/Portfolio/tvnovDB.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
                     </div>
                 </div>
@@ -301,6 +302,7 @@
                     <img src="assets/images/Portfolio/dashboard cdi.png" alt="Portfolio-Image" />
                     <div class="content">
                         <h4>Dashboard Centro Dental</h4>
+                        <p>Developed with PHP</p>
                         <a data-effect="mfp-newspaper" id="dash_centro" href="assets/images/Portfolio/ncm_shop.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
                     </div>
                 </div>
@@ -309,6 +311,7 @@
                     <img src="assets/images/Portfolio/centrodental.png" alt="Portfolio-Image" />
                     <div class="content">
                         <h4>Centro dental infantil </h4>
+                        <p>Developed with PHP & JS</p>
                         <a data-effect="mfp-newspaper" id="centro" href="assets/images/Portfolio/citas_cdi.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
                     </div>
                 </div>
@@ -316,6 +319,7 @@
                     <img src="assets/images/Portfolio/unicornioazul.png" alt="Portfolio-Image" />
                     <div class="content">
                         <h4>Unicornio azul</h4>
+                        <p>Developed with Laravel & JS</p>
                         <a data-effect="mfp-newspaper" id="unicornio" href="assets/images/Portfolio/ncm_shop.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
                     </div>
                 </div> 
@@ -323,21 +327,28 @@
                     <img src="assets/images/Portfolio/dashboard_unicornio.png" alt="Portfolio-Image" />
                     <div class="content">
                         <h4>Dashboard Unicornio Azul</h4>
+                        <p>Developed with Laravel & JS</p>
                         <a data-effect="mfp-newspaper" id="dash_unicornio" href="assets/images/Portfolio/ncm_shop.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
                     </div>
                 </div>
             
-              
-              
                 <div class="portfolio-item image web">
                     <img src="assets/images/Portfolio/spa.png" alt="Portfolio-Image" />
                     <div class="content">
                         <h4>SPA CENTER</h4>
+                        <p>Developed with Laravel</p>
                         <a data-effect="mfp-newspaper" id="spa" href="assets/images/Portfolio/ncm_shop.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
                     </div>
                 </div>
                
-               
+                <div class="portfolio-item image web">
+                    <img src="assets/images/Portfolio/iot.png" alt="Portfolio-Image" />
+                    <div class="content">
+                        <h4>IoT APP</h4>
+                        <p>Developed with ASP.NET</p>
+                        <a data-effect="mfp-newspaper" id="iot" href="assets/images/Portfolio/iot.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
             </div>
     
         </div>
@@ -393,24 +404,7 @@
     </script>
 
     <!-- Contact-Form Script -->
-    <script>
-        jQuery('#contactUs-Form').on('submit',function(e){
-          jQuery('#msg').html('');
-          jQuery('#submit').html('Please wait');
-          jQuery('#submit').attr('disabled',true);
-          jQuery.ajax({
-              url:'assets/php/submit.php',
-              type:'post',
-              data:jQuery('#contactUs-Form').serialize(),
-              success:function(result){
-                  jQuery('#msg').html(result);
-                  jQuery('#submit').html('Submit');
-                  jQuery('#submit').attr('disabled',false);
-                  jQuery('#contactUs-Form')[0].reset();
-              }
-          });
-          e.preventDefault();
-        });
+    
     </script>
     <script src="assets/js/app.js"></script>
 </body>

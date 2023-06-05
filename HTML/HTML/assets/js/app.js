@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
           div.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/CSdXUdpt7i0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
           flag = true;
         }
-        if(id === "non-material"){
-          div.innerHTML = `<img src="./assets/images/Portfolio/Ncm_app.png" alt="spa" width="100%" height="100%">`;
+        if(id === "iot"){
+          div.innerHTML = `<img src="./assets/images/Portfolio/iot.png" alt="iot" width="100%" height="100%">`;
           flag = true;
         }
         if(id === "eboard"){
